@@ -1,0 +1,42 @@
+body{
+    background-image: url("../image/background-disney.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.disney-body{
+    
+}
+.logo-disney{
+    width: 100px;
+    height: 60px;
+}
+.navbar{
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    margin: 20px;
+}
+.menu{
+    color: #f9f9f9;
+    font-weight: 600;
+}
+.menu-a{
+    padding: 16px 38px;
+    cursor: pointer;
+}
+.avatar{
+    color: #f9f9f9;
+}
+.avatar-icon{
+    width: 50px;
+    height: 50px;
+}
