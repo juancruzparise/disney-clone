@@ -24,6 +24,7 @@ function Footer(){
             </p>
          </div>
          <p className='copyright'>© Disney. Todos los derechos reservados.</p>
+         <div className='xd'></div>
         </div>
     </div>
     );
