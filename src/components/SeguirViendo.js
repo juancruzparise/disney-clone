@@ -7,7 +7,7 @@ import MalcomInTheMiddle from '../image/movies/malcominthemiddle.jpg';
 function SeguirViendo(){
     return(
         <div className='all-movies'>
-        <p className='subtitle-p'>Recomendaciones para ti</p>
+        <p className='subtitle-p'>Continuar viendo</p>
         <div className='categories'>
           <div className="container seguirviendo">
         <div className="item seguirviendoitem">
