@@ -1,28 +1,22 @@
-// import './App.css';
 import './styles/style.css';
-import LogoDisney from './image/logo.png';
-import Avatar from './image/avatar.png';
-
+import React, { useRef, useState } from "react";
+import Header from './components/header';
+import Carousel from './components/carousel';
+import Categories from './components/categories';
+import AllMovies from './components/recomendaciones';
+import Novedades from './components/novedades';
+import SeguirViendo from './components/SeguirViendo';
+import Footer from './components/footer';
 function App() {
   return (
     <div className='disney-body'>
-      <div className='navbar'>
-        <div className='logo'>
-          <img src={LogoDisney} alt='logo' className='logo-disney'/>
-        </div>
-        <div className='menu'>
-          <a className='menu-a'>INICIO</a>
-          <a className='menu-a'>BÚSQUEDA</a>
-          <a className='menu-a'>MI LISTA</a>
-          <a className='menu-a'>ORIGINALES</a>
-          <a className='menu-a'>PELICULAS</a>
-          <a className='menu-a'>SERIES</a>
-        </div>
-        <div className='avatar'>
-          <a>Usuario</a>
-          <img src={Avatar} alt="avatar" className='avatar-icon'/>
-        </div>
-      </div>
+      <Header />
+      <Carousel />
+      <Categories />
+      <AllMovies />
+      <Novedades />
+      <SeguirViendo />
+      <Footer />
     </div>
   );
 }

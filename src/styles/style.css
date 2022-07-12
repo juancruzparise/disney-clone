@@ -1,3 +1,6 @@
+:root{
+    --swiper-theme-color: #fff !important;
+}
 body{
     background-image: url("../image/background-disney.png");
     background-size: cover;
@@ -9,8 +12,8 @@ body{
     
 }
 .logo-disney{
-    width: 100px;
-    height: 60px;
+    width: 78px;
+    height: 48px;
 }
 .navbar{
     max-width: 100%;
@@ -21,22 +24,230 @@ body{
     -webkit-box-pack: justify;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: -10px;
     left: 0px;
     margin: 20px;
+    font-size: 0.9em;
 }
 .menu{
     color: #f9f9f9;
     font-weight: 600;
+    align-items: center;
+    display: flex;
+}
+.menu-tabs{
+    margin-left: 50px; 
+    align-items: center;
+    display: flex;
 }
 .menu-a{
-    padding: 16px 38px;
+    padding: 16px 20px;
     cursor: pointer;
 }
 .avatar{
     color: #f9f9f9;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
 }
 .avatar-icon{
     width: 50px;
     height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
 }
+svg{
+    width: 14px;
+    height: 14px;
+}
+
+/* CAROUSEL */
+.carousel{
+    margin-top: 7%;
+}
+.slide{
+    width: 40%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.images-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .images-carousel-title{
+    position: absolute;
+    z-index: 1;
+  }
+  .images-carousel-image{
+    z-index: -1;
+  }
+/* CATEGORIES */
+
+.categories{
+    margin-top: 3%;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seguirviendo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .item {
+    width: 35%;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .seguirviendoitem{
+    width: 18%;
+  }
+  
+  .item__border {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+    border-radius: 10px;
+    border: 4px solid rgba(249, 249, 249, 0.1);
+    transition: transform 250ms ease-in-out, border 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  }
+  .item__border-movie {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+    border-radius: 10px;
+    transition: transform 250ms ease-in-out, border 250ms ease-in-out, box-shadow 250ms ease-in-out;
+  }
+  
+  .item__image {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   z-index: 1;
+  }
+  
+  .item__image.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    visibility: hidden;
+  }
+  
+  .item:hover .item__border {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px, rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+    transform: scale(1.05);
+    border: 4px solid rgba(249, 249, 249, 0.8);
+  }
+  .item:hover .item__border-movie {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px, rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+    transform: scale(1.10);
+    border: 4px solid rgba(249, 249, 249, 0.8);
+  }
+  
+  .item:hover .item__image.hover-image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .container {
+      flex-direction: row;
+    }
+    .item {
+        width: 20%;
+    }
+    .seguirviendoitem{
+        width: 18%;
+    }
+  }
+  
+  /* ALL MOVIES */
+  .all-movies{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subtitle-p{
+   font-size: 1.3em;
+   font-weight: 600;
+   color: #f9f9f9;
+   margin-left: 70px;
+  }
+
+  /* FOOTER */
+  .footer{
+    background-color: #0e0b14;
+    color: #cacaca;
+  }
+  .footer-content{
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .logo-disney-footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .footer-content-text{
+    display: flex;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 500px;
+  }
+  .etiquetas-footer{
+    margin: 11px 5px 10px;
+    cursor: pointer;
+  }
+  .text-footer{
+    text-align: center;
+    max-width: 430px;
+  }
+  .copyright{
+    text-align: center;
+  }
