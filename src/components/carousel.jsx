@@ -3,7 +3,7 @@ import '../styles/style.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper";
+import { Navigation } from 'swiper/modules'; // Correct import path for Navigation module
 //CAROUSEL FOTOS
 import RayoMcQueen from '../image/rayomcqueen.jpg';
 import Soul from '../image/soul.jpg';

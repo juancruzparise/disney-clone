@@ -5,6 +5,7 @@ import Avatar from '../image/avatar.png';
 
 function Header() {
   return (
+    <>
     <div className='navbar'>
     <div className='menu'>
     <div className='logo'>
@@ -61,6 +62,7 @@ function Header() {
       <img src={Avatar} alt="avatar" className='avatar-icon'/>
     </div>
   </div>
+  </>
   );
 }
 export default Header;

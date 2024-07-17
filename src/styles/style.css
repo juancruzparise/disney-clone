@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 .logo-disney{
     width: 78px;
@@ -40,6 +41,7 @@ body{
 .menu-a{
     padding: 16px 20px;
     cursor: pointer;
+    color: #f9f9f9;
 }
 .avatar{
     color: #f9f9f9;
@@ -48,6 +50,13 @@ body{
     font-weight: 600;
     cursor: pointer;
 }
+
+.avatar a{
+    color: #f9f9f9;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .avatar-icon{
     width: 50px;
     height: 50px;
@@ -60,56 +69,60 @@ svg{
 }
 
 /* CAROUSEL */
-.carousel{
-    margin-top: 7%;
+/* CAROUSEL */
+.carousel {
+  margin-top: 7%;
+  overflow: hidden;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.slide{
-    width: 40%;
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
+
 .swiper {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background-color: transparent !important;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 90%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  display: block;
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
-.images-carousel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .images-carousel-title{
-    position: absolute;
-    z-index: 1;
-  }
-  .images-carousel-image{
-    z-index: -1;
-  }
+
+.images-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-carousel-title {
+  position: absolute;
+  z-index: 1;
+}
+
+.images-carousel-image {
+  z-index: -1;
+}
+
+
 /* CATEGORIES */
 
 .categories{
